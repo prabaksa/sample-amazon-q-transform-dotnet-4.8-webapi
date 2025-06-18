@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="a9348031-2b49-487e-88da-b28014be7b83" name="@ip-10-0-59-39 2025-06-18 04:50:27" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-06-18T04:50:27.2624623+00:00" queuing="2025-06-18T04:50:27.2624624+00:00" start="2025-06-18T04:50:26.4280928+00:00" finish="2025-06-18T04:50:27.3141878+00:00" />
+  <TestSettings name="default" id="66df11f4-178a-400e-ad7c-d203f3e94df5">
+    <Deployment runDeploymentRoot="_ip-10-0-59-39_2025-06-18_04_50_27" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a879222c-3991-4f1e-9eaf-31b2df7be3b8" testId="96d05c45-1e80-db42-6edb-851e29994915" testName="GetProduct_WithNonexistentId_ReturnsNotFound" computerName="ip-10-0-59-39" duration="00:00:00.0008392" startTime="2025-06-18T04:50:27.1395011+00:00" endTime="2025-06-18T04:50:27.1404898+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a879222c-3991-4f1e-9eaf-31b2df7be3b8" />
+    <UnitTestResult executionId="422da599-88dc-4df7-946c-40c78c844560" testId="f16c4ac9-67d0-f735-9356-6a013866bdb4" testName="CreateProduct_WithNullProduct_ReturnsBadRequest" computerName="ip-10-0-59-39" duration="00:00:00.0002534" startTime="2025-06-18T04:50:27.1504517+00:00" endTime="2025-06-18T04:50:27.1508584+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="422da599-88dc-4df7-946c-40c78c844560" />
+    <UnitTestResult executionId="2dcad533-468b-478a-ad4a-11ab99f8eb01" testId="b8e78a98-a0b3-34cb-f339-5139beb26e49" testName="ListProducts_WhenExceptionOccurs_ReturnsInternalServerError" computerName="ip-10-0-59-39" duration="00:00:00.0012194" startTime="2025-06-18T04:50:27.1321295+00:00" endTime="2025-06-18T04:50:27.1335689+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2dcad533-468b-478a-ad4a-11ab99f8eb01" />
+    <UnitTestResult executionId="edb224bd-0da3-4cc3-87c5-bbfcbec24a1f" testId="3a43219f-9b3e-fd4f-27da-76ee4bd73f3e" testName="GetProduct_WithInvalidId_ReturnsBadRequest" computerName="ip-10-0-59-39" duration="00:00:00.0010002" startTime="2025-06-18T04:50:27.1382571+00:00" endTime="2025-06-18T04:50:27.1394318+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edb224bd-0da3-4cc3-87c5-bbfcbec24a1f" />
+    <UnitTestResult executionId="8110ecd2-3cab-46ce-b6b7-18818a0cef7a" testId="d85f7934-b08a-6099-d8dd-f11c5ee80c7b" testName="GetProduct_WithValidId_ReturnsOkResult" computerName="ip-10-0-59-39" duration="00:00:00.0043640" startTime="2025-06-18T04:50:27.1336453+00:00" endTime="2025-06-18T04:50:27.1381745+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8110ecd2-3cab-46ce-b6b7-18818a0cef7a" />
+    <UnitTestResult executionId="649cd7fb-22f6-4a27-9714-f8526cf9457d" testId="0619576f-e30d-c6b9-d2f9-f98ed82d69cf" testName="UpdateProduct_WithValidProduct_ReturnsOkResult" computerName="ip-10-0-59-39" duration="00:00:00.0039276" startTime="2025-06-18T04:50:27.1953701+00:00" endTime="2025-06-18T04:50:27.1995135+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="649cd7fb-22f6-4a27-9714-f8526cf9457d" />
+    <UnitTestResult executionId="6360dfb3-0dfe-49b7-89c2-f7ea45e059b3" testId="a01d253d-50e5-5694-06a2-afd038d8d55c" testName="CreateProduct_WithValidProduct_ReturnsCreatedResult" computerName="ip-10-0-59-39" duration="00:00:00.0096250" startTime="2025-06-18T04:50:27.1405790+00:00" endTime="2025-06-18T04:50:27.1503623+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6360dfb3-0dfe-49b7-89c2-f7ea45e059b3" />
+    <UnitTestResult executionId="2998f6b2-e4e2-481b-a08d-2c98514a5d76" testId="5039ff76-38d9-4af5-b730-d800114bfc4d" testName="Constructor_WithValidService_CreatesController" computerName="ip-10-0-59-39" duration="00:00:00.0678527" startTime="2025-06-18T04:50:27.0217221+00:00" endTime="2025-06-18T04:50:27.1092981+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2998f6b2-e4e2-481b-a08d-2c98514a5d76" />
+    <UnitTestResult executionId="ada48924-4d91-4609-b532-4a971913a778" testId="28c1d932-7d90-f5e4-ad21-bfa77c6d4ac0" testName="Constructor_WithNullService_ThrowsArgumentNullException" computerName="ip-10-0-59-39" duration="00:00:00.0027715" startTime="2025-06-18T04:50:27.1144604+00:00" endTime="2025-06-18T04:50:27.1181980+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ada48924-4d91-4609-b532-4a971913a778" />
+    <UnitTestResult executionId="093cb580-e1cc-4311-942f-e010b403a019" testId="824336c3-342a-ddaf-2c23-2d4c6ba58858" testName="ListProducts_ReturnsOkResultWithProducts" computerName="ip-10-0-59-39" duration="00:00:00.0130993" startTime="2025-06-18T04:50:27.1186991+00:00" endTime="2025-06-18T04:50:27.1320265+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="093cb580-e1cc-4311-942f-e010b403a019" />
+    <UnitTestResult executionId="a15b32db-bd6e-4645-b971-901aeba11487" testId="60ee6d5c-d14a-92e8-36d5-ab2399d7a75c" testName="DeleteProduct_WithValidId_ReturnsOkResult" computerName="ip-10-0-59-39" duration="00:00:00.0011573" startTime="2025-06-18T04:50:27.1996031+00:00" endTime="2025-06-18T04:50:27.2018619+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a15b32db-bd6e-4645-b971-901aeba11487" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ListProducts_ReturnsOkResultWithProducts" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="824336c3-342a-ddaf-2c23-2d4c6ba58858">
+      <Execution id="093cb580-e1cc-4311-942f-e010b403a019" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="ListProducts_ReturnsOkResultWithProducts" />
+    </UnitTest>
+    <UnitTest name="CreateProduct_WithValidProduct_ReturnsCreatedResult" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="a01d253d-50e5-5694-06a2-afd038d8d55c">
+      <Execution id="6360dfb3-0dfe-49b7-89c2-f7ea45e059b3" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="CreateProduct_WithValidProduct_ReturnsCreatedResult" />
+    </UnitTest>
+    <UnitTest name="DeleteProduct_WithValidId_ReturnsOkResult" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="60ee6d5c-d14a-92e8-36d5-ab2399d7a75c">
+      <Execution id="a15b32db-bd6e-4645-b971-901aeba11487" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="DeleteProduct_WithValidId_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="Constructor_WithNullService_ThrowsArgumentNullException" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="28c1d932-7d90-f5e4-ad21-bfa77c6d4ac0">
+      <Execution id="ada48924-4d91-4609-b532-4a971913a778" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="Constructor_WithNullService_ThrowsArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="GetProduct_WithNonexistentId_ReturnsNotFound" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="96d05c45-1e80-db42-6edb-851e29994915">
+      <Execution id="a879222c-3991-4f1e-9eaf-31b2df7be3b8" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="GetProduct_WithNonexistentId_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="CreateProduct_WithNullProduct_ReturnsBadRequest" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="f16c4ac9-67d0-f735-9356-6a013866bdb4">
+      <Execution id="422da599-88dc-4df7-946c-40c78c844560" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="CreateProduct_WithNullProduct_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="ListProducts_WhenExceptionOccurs_ReturnsInternalServerError" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="b8e78a98-a0b3-34cb-f339-5139beb26e49">
+      <Execution id="2dcad533-468b-478a-ad4a-11ab99f8eb01" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="ListProducts_WhenExceptionOccurs_ReturnsInternalServerError" />
+    </UnitTest>
+    <UnitTest name="UpdateProduct_WithValidProduct_ReturnsOkResult" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="0619576f-e30d-c6b9-d2f9-f98ed82d69cf">
+      <Execution id="649cd7fb-22f6-4a27-9714-f8526cf9457d" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="UpdateProduct_WithValidProduct_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="GetProduct_WithInvalidId_ReturnsBadRequest" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="3a43219f-9b3e-fd4f-27da-76ee4bd73f3e">
+      <Execution id="edb224bd-0da3-4cc3-87c5-bbfcbec24a1f" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="GetProduct_WithInvalidId_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="GetProduct_WithValidId_ReturnsOkResult" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="d85f7934-b08a-6099-d8dd-f11c5ee80c7b">
+      <Execution id="8110ecd2-3cab-46ce-b6b7-18818a0cef7a" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="GetProduct_WithValidId_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="Constructor_WithValidService_CreatesController" storage="/tmp/tempfspartition/qnettransformartifacts/midtransformcode/transformedcode/sourcecode/productswebapitest/bin/debug/net8.0/productswebapitest.dll" id="5039ff76-38d9-4af5-b730-d800114bfc4d">
+      <Execution id="2998f6b2-e4e2-481b-a08d-2c98514a5d76" />
+      <TestMethod codeBase="/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/ProductsWebAPITest/bin/Debug/net8.0/ProductsWebAPITest.dll" adapterTypeName="executor://mstestadapter/v2" className="ProductsApp.Tests.Controllers.ProductsControllerTests" name="Constructor_WithValidService_CreatesController" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="96d05c45-1e80-db42-6edb-851e29994915" executionId="a879222c-3991-4f1e-9eaf-31b2df7be3b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f16c4ac9-67d0-f735-9356-6a013866bdb4" executionId="422da599-88dc-4df7-946c-40c78c844560" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8e78a98-a0b3-34cb-f339-5139beb26e49" executionId="2dcad533-468b-478a-ad4a-11ab99f8eb01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a43219f-9b3e-fd4f-27da-76ee4bd73f3e" executionId="edb224bd-0da3-4cc3-87c5-bbfcbec24a1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d85f7934-b08a-6099-d8dd-f11c5ee80c7b" executionId="8110ecd2-3cab-46ce-b6b7-18818a0cef7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0619576f-e30d-c6b9-d2f9-f98ed82d69cf" executionId="649cd7fb-22f6-4a27-9714-f8526cf9457d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a01d253d-50e5-5694-06a2-afd038d8d55c" executionId="6360dfb3-0dfe-49b7-89c2-f7ea45e059b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5039ff76-38d9-4af5-b730-d800114bfc4d" executionId="2998f6b2-e4e2-481b-a08d-2c98514a5d76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28c1d932-7d90-f5e4-ad21-bfa77c6d4ac0" executionId="ada48924-4d91-4609-b532-4a971913a778" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="824336c3-342a-ddaf-2c23-2d4c6ba58858" executionId="093cb580-e1cc-4311-942f-e010b403a019" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60ee6d5c-d14a-92e8-36d5-ab2399d7a75c" executionId="a15b32db-bd6e-4645-b971-901aeba11487" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="11" executed="11" passed="11" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
