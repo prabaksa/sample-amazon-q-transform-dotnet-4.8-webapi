@@ -1,0 +1,17 @@
+using System.Web.Http;
+using ProductsWebAPI.App_Start;
+using Microsoft.AspNetCore.Http;
+
+using System.Threading.Tasks;
+
+
+namespace ProductsWebAPI
+{
+    public class WebApiApplication     {
+RequestDelegate _next = null;        protected void Application_Start()
+        {
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+            DependencyInjectionSetup.Configure();
+        }
+publicWebApiApplication(RequestDelegatenext){}    }
+}
