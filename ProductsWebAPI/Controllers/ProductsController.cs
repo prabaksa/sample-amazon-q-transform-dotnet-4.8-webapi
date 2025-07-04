@@ -1,13 +1,16 @@
-﻿using System;
-using System.Web.Http;
+using System;
 using ProductsWebAPI.Models;
 using ProductsWebAPI.Service;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+
+
+
 
 
 namespace ProductsWebAPI.Controllers
 {
-    public class ProductsController : ApiController
-    {
+[ApiController]    public class ProductsController :ControllerBase    {
 
         private readonly IProductsService _productsService;
         public ProductsController(IProductsService productsService)
@@ -18,7 +21,7 @@ namespace ProductsWebAPI.Controllers
 
         [Route("api/products")]
         [HttpGet]
-        public IHttpActionResult ListProducts()
+        public IActionResult ListProducts()
         {
             try
             {
@@ -26,13 +29,13 @@ namespace ProductsWebAPI.Controllers
                 return Ok(products);
             }
             catch (Exception ex) {
-                return InternalServerError(ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
         }
 
         [Route("api/products/{id:int}")]
         [HttpGet]
-        public IHttpActionResult GetProduct(int id)
+        public IActionResult GetProduct(int id)
         {
             //Validation
             if (id <= 0)
@@ -51,7 +54,7 @@ namespace ProductsWebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
 
         }
@@ -59,7 +62,7 @@ namespace ProductsWebAPI.Controllers
         // POST api/product
         [Route("api/products")]
         [HttpPost]
-        public IHttpActionResult CreateProduct([FromBody] Product value)
+        public IActionResult CreateProduct([FromBody] Product value)
         {
             //Validation
             if (value == null)
@@ -74,7 +77,7 @@ namespace ProductsWebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
 
         }
@@ -83,7 +86,7 @@ namespace ProductsWebAPI.Controllers
 
         [Route("api/products/{id:int}")]
         [HttpPut]
-        public IHttpActionResult UpdateProduct(int id, [FromBody] Product newValue)
+        public IActionResult UpdateProduct(int id, [FromBody] Product newValue)
         {
             //Validation
             if (id <= 0)
@@ -110,7 +113,7 @@ namespace ProductsWebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
 
         }
@@ -118,7 +121,7 @@ namespace ProductsWebAPI.Controllers
         // DELETE api/products/5
         [Route("api/products/{id:int}")]
         [HttpDelete]
-        public IHttpActionResult DeleteProduct(int id)
+        public IActionResult DeleteProduct(int id)
         {
             //Validation
             if (id <= 0)
@@ -133,7 +136,7 @@ namespace ProductsWebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
         }
     }
